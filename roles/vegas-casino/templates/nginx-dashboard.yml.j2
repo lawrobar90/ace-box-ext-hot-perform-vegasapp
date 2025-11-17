@@ -88,19 +88,19 @@ data:
                                 
                                 <h4>Casino Games</h4>
                                 <ul class="link-list">
-                                    <li><a href="http://vegas.{{ ingress_domain }}/" target="_blank" rel="noreferrer">🏠 Casino Lobby</a></li>
-                                    <li><a href="http://vegas.{{ ingress_domain }}/slots.html" target="_blank" rel="noreferrer">� Slot Machines</a></li>
-                                    <li><a href="http://vegas.{{ ingress_domain }}/blackjack.html" target="_blank" rel="noreferrer">🃏 Blackjack</a></li>
-                                    <li><a href="http://vegas.{{ ingress_domain }}/roulette.html" target="_blank" rel="noreferrer">🎡 Roulette</a></li>
-                                    <li><a href="http://vegas.{{ ingress_domain }}/dice.html" target="_blank" rel="noreferrer">🎲 Dice Game</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/" target="_blank" rel="noreferrer">🏠 Casino Lobby</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/slots.html" target="_blank" rel="noreferrer">🎰 Slot Machines</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/blackjack.html" target="_blank" rel="noreferrer">🃏 Blackjack</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/roulette.html" target="_blank" rel="noreferrer">🎡 Roulette</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/dice.html" target="_blank" rel="noreferrer">🎲 Dice Game</a></li>
                                 </ul>
                                 
                                 <h4>Admin & Monitoring</h4>
                                 <ul class="link-list">
-                                    <li><a href="http://vegas.{{ ingress_domain }}/health" target="_blank" rel="noreferrer">❤️ Health Check</a></li>
-                                    <li><a href="http://vegas.{{ ingress_domain }}/api/admin/services/status" target="_blank" rel="noreferrer">⚙️ Admin Dashboard</a></li>
-                                    <li><a href="http://vegas.{{ ingress_domain }}/leaderboard.html" target="_blank" rel="noreferrer">🏆 Leaderboard</a></li>
-                                    <li><a href="http://vegas.{{ ingress_domain }}/analytics.html" target="_blank" rel="noreferrer">📊 Analytics</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/health" target="_blank" rel="noreferrer">❤️ Health Check</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/api/admin/services/status" target="_blank" rel="noreferrer">⚙️ Admin Dashboard</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/leaderboard.html" target="_blank" rel="noreferrer">🏆 Leaderboard</a></li>
+                                    <li><a href="https://vegas.{{ ingress_domain }}/analytics.html" target="_blank" rel="noreferrer">📊 Analytics</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -124,8 +124,8 @@ data:
                                 
                                 <h4>Quick Access</h4>
                                 <ul class="link-list">
-                                    <li><a href="http://mattermost.{{ ingress_domain }}/" target="_blank" rel="noreferrer">🌐 Open Mattermost</a></li>
-                                    <li><a href="http://mattermost.{{ ingress_domain }}/login" target="_blank" rel="noreferrer">🔑 Direct Login</a></li>
+                                    <li><a href="https://mattermost.{{ ingress_domain }}/" target="_blank" rel="noreferrer">🌐 Open Mattermost</a></li>
+                                    <li><a href="https://mattermost.{{ ingress_domain }}/login" target="_blank" rel="noreferrer">🔑 Direct Login</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -140,13 +140,13 @@ data:
                         <h2>Vegas Casino Application</h2>
                         <dl class="definition-list">
                             <dt>Production Environment</dt>
-                            <dd><a href="http://vegas.{{ ingress_domain }}/" target="_blank" rel="noreferrer">Vegas Casino - Live</a></dd>
+                            <dd><a href="https://vegas.{{ ingress_domain }}/" target="_blank" rel="noreferrer">Vegas Casino - Live</a></dd>
                             
                             <dt>Application Health</dt>
-                            <dd><a href="http://vegas.{{ ingress_domain }}/health" target="_blank" rel="noreferrer">Health Check Endpoint</a></dd>
+                            <dd><a href="https://vegas.{{ ingress_domain }}/health" target="_blank" rel="noreferrer">Health Check Endpoint</a></dd>
                             
                             <dt>Admin Interface</dt>
-                            <dd><a href="http://vegas.{{ ingress_domain }}/api/admin/services/status" target="_blank" rel="noreferrer">Service Status Dashboard</a></dd>
+                            <dd><a href="https://vegas.{{ ingress_domain }}/api/admin/services/status" target="_blank" rel="noreferrer">Service Status Dashboard</a></dd>
                             
                             <dt>Casino Games</dt>
                             <dd>
@@ -169,11 +169,11 @@ data:
                             <dd><a href="{{ extra_vars.dt_environment_url_gen3 | default('https://your-tenant.apps.dynatrace.com') }}" target="_blank" rel="noreferrer">Access your Dynatrace tenant</a></dd>
                             
                             <dt>Vegas Casino Application</dt>
-                            <dd><a href="http://vegas.{{ ingress_domain }}/" target="_blank" rel="noreferrer">Vegas Casino with fraud detection</a></dd>
+                            <dd><a href="https://vegas.{{ ingress_domain }}/" target="_blank" rel="noreferrer">Vegas Casino with fraud detection</a></dd>
                             
                             <dt>Mattermost</dt>
                             <dd>
-                                <a href="http://mattermost.{{ ingress_domain }}/" target="_blank" rel="noreferrer">Team collaboration platform</a>
+                                <a href="https://mattermost.{{ ingress_domain }}/" target="_blank" rel="noreferrer">Team collaboration platform</a>
                                 <div style="margin-top: 0.5rem; padding: 0.5rem; background-color: var(--color-background-subtle); border-radius: 4px;">
                                     <small><strong>Login:</strong> {{ mattermost_username | default('admin') }} / {{ mattermost_password | default('admin123') }}</small>
                                 </div>
@@ -526,9 +526,9 @@ spec:
         - name: DT_ENVIRONMENT_URL
           value: "{{ extra_vars.dt_environment_url_gen3 | default('https://YOUR_TENANT.apps.dynatrace.com') }}"
         - name: VEGAS_URL
-          value: "http://vegas.{{ ingress_domain | default('localhost') }}"
+          value: "https://vegas.{{ ingress_domain | default('localhost') }}"
         - name: MATTERMOST_URL
-          value: "http://mattermost.{{ ingress_domain | default('localhost') }}"
+          value: "https://mattermost.{{ ingress_domain | default('localhost') }}"
         - name: MATTERMOST_USERNAME
           value: "{{ mattermost_username | default('admin') }}"
         - name: MATTERMOST_PASSWORD

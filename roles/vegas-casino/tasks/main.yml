@@ -124,7 +124,7 @@
     echo "Started Vegas Casino application in background with fraud detection"
   environment:
     ACE_BOX_ID: "{{ ace_box_id | default('ace-box-demo') }}"
-    VEGAS_EXTERNAL_URL: "http://{{ vegas_domain }}"
+    VEGAS_EXTERNAL_URL: "https://{{ vegas_domain }}"
     COMPANY_NAME: "{{ company_name | default('Dynatrace') }}"
     COMPANY_DOMAIN: "{{ company_domain | default('dynatrace.com') }}"
     NODE_ENV: "production"
@@ -485,7 +485,7 @@
       delay: 5
       loop:
         - { name: "dashboard", url: "https://dashboard.{{ ingress_domain }}" }
-        - { name: "bizobs", url: "https://bizobs.{{ ingress_domain }}" }
+        - { name: "vegas-casino", url: "https://vegas.{{ ingress_domain }}" }
         - { name: "mattermost", url: "https://mattermost.{{ ingress_domain }}" }
 
 # Final deployment summary
