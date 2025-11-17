@@ -1,0 +1,9 @@
+---
+# Vegas Casino ACE-Box Extension Configuration
+name: "vegas-casino"
+description: "Vegas Casino with Fraud Detection & Business Observability"
+version: "1.0.0"
+# Default overrides
+apply_monaco_easytrade: false
+apply_monaco_vegas: true
+

@@ -1,0 +1,11 @@
+#
+# Vegas Casino - ACE-BOX Use Case (Role-based Pattern)
+# Command: ace enable https://github.com/lawrobar90/ace-box-ext-hot-perform-vegasapp.git
+#
+
+---
+- debug:
+    msg: "🚀 ACE-BOX: Deploying Vegas Casino with Fraud Detection (Role-based)"
+
+- include_role:
+    name: vegas-casino

@@ -1,0 +1,20 @@
+# Vegas Casino - Default Variables
+# ACE-BOX deployment optimized with fraud detection
+
+# Application settings
+vegas_repo_url: "https://github.com/lawrobar90/vegas-casino.git"
+vegas_version: "main"
+
+# Company context for demo scenarios
+company_name: "Dynatrace"
+company_domain: "dynatrace.com"
+industry_type: "gaming"
+
+# Deployment settings
+force_clone: false
+startup_timeout: 45
+
+# Fraud detection settings
+enable_fraud_detection: true
+cheat_lockout_duration: 3600
+silent_cheat_monitoring: true
